@@ -1,7 +1,7 @@
 # Stata--EM-Funcition-of-Gender
 Paolo Spring 2018 Research
 
-use "C:\Users\Pablo San Martin\Dropbox\SaoSan\Board Gender\DB Gener EUR.dta", clear
+use "DB Gener EUR.dta", clear
 
 . sort iden year
 . tsset iden year, yearly
@@ -675,46 +675,6 @@ tabstat womenboard womenexecutive boardsize indepboard nonexecboard policyboardd
 correlate womenboard womenexecutive boardsize indepboard boardmeetings1 boardmeetingattendanceavg1 wsize wmtb wroa tdta wz wcapex tobinq ownconcen own1 own2 own3
 ***Correlation matrix econindex va ps ge rq rl cc econfree ggg
 correlate econindex va ps ge rq rl cc econfree ggg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 *************************************
