@@ -10,9 +10,9 @@ cap log using EM_Board_Remuneration.log, text replace
 global USER "Ryan McWay"
 local date `c(current_date)'
 local time `c(current_time)'
-local input "C:\Users\Ryry\Documents\Ryan\Documents\USF\Paolo-Laura-Research\EM_on_Board_Remuneration\raw"
-local output "C:\Users\Ryry\Documents\Ryan\Documents\USF\Paolo-Laura-Research\EM_on_Board_Remuneration\text"
-local edit "C:\Users\Ryry\Documents\Ryan\Documents\USF\Paolo-Laura-Research\EM_on_Board_Remuneration\edit"
+local input "raw"
+local output "text"
+local edit "edit"
 **************************************************************************
 display "Analysis run by $USER for EM and Board Remuneration and Board Activity at `date' and `time'"
 
