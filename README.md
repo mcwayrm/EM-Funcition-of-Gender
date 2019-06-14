@@ -1,4 +1,4 @@
-### Research conducted with Prof. Paolo Saono and Prof. Laura Muro.
-1st on Earnings Management as a Function of Gender.
+### Research with Prof. Paolo Saono and Prof. Laura Muro at SLU_Madrid
 
-2nd on Earnings Management and Board Remuneration/Activity
+1. Earnings Management as a Function of Gender
+2. Earnings Management and Board Remuneration/Board Activity
