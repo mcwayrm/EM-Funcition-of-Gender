@@ -1,7 +1,7 @@
 # Stata--EM-Funcition-of-Gender
 Paolo Spring 2018 Research
 
-use "DB Gener EUR.dta", clear
+use "<DB Gener EUR.dta>", clear
 
 . sort iden year
 . tsset iden year, yearly
@@ -191,107 +191,107 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable wEM1********
 
 . areg wEM1 womenboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", replace label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<AREG.xls>", replace label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
 
 . areg wEM1 womenboard boardsize own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
 
 . areg wEM1 womenboard indepboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
 
 . areg wEM1 womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
 
 . areg wEM1 womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
 
 . areg wEM1 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM1") tstat
 
 
 ********Dependent Variable wEM2********
 
 . areg wEM2 womenboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
 
 . areg wEM2 womenboard boardsize own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
 
 . areg wEM2 womenboard indepboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
 
 . areg wEM2 womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
 
 . areg wEM2 womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
 
 . areg wEM2 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM2") tstat
 
 
 ********Dependent Variable absEM3********
 
 . areg absEM3 womenboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
 
 . areg absEM3 womenboard boardsize own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
 
 . areg absEM3 womenboard indepboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
 
 . areg absEM3 womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
 
 . areg absEM3 womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
 
 . areg absEM3 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM3") tstat
 
 
 
 ********Dependent Variable absEM4********
 
 . areg absEM4 womenboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
 
 . areg absEM4 womenboard boardsize own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
 
 . areg absEM4 womenboard indepboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
 
 . areg absEM4 womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
 
 . areg absEM4 womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
 
 . areg absEM4 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM4") tstat
 
 
 ********Dependent Variable absEM5********
 
 . areg absEM5 womenboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
 
 . areg absEM5 womenboard boardsize own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
 
 . areg absEM5 womenboard indepboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
 
 . areg absEM5 womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
 
 . areg absEM5 womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
 
 . areg absEM5 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa, absorb(yc) r cluster (id)
-. outreg2 using "AREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<AREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize tobinq tdta z roa) addtext(Year FE, YES, Country FE, YES) addstat(Adj. R-Squared, e(r2_a), F-test, e(F)) dec(4) ctitle("EM5") tstat
 
 
 
@@ -302,43 +302,43 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable wEM1********
 
 . xtreg wEM1 womenboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", replace label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", replace label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
 
 . xtreg wEM1 womenboard boardsize own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
 
 . xtreg wEM1 womenboard indepboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
 
 . xtreg wEM1 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
 
 . xtreg wEM1 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
 
 . xtreg wEM1 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM1") tstat
 
 
 ********Dependent Variable wEM2********
 
 . xtreg wEM2 womenboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard boardsize own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard indepboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 
 
@@ -346,66 +346,66 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable absEM3********
 
 . xtreg absEM3 womenboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
 
 . xtreg absEM3 womenboard boardsize own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
 
 . xtreg absEM3 womenboard indepboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
 
 . xtreg absEM3 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
 
 . xtreg absEM3 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
 
 . xtreg absEM3 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM3") tstat
 
 
 
 ********Dependent Variable absEM4********
 
 . xtreg absEM4 womenboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard boardsize own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard indepboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 
 
 ********Dependent Variable absEM5********
 
 . xtreg absEM5 womenboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard boardsize own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard indepboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 
 
@@ -414,43 +414,43 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable wEM1********
 
 . xtgls wEM1 womenboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", replace label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", replace label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
 
 . xtgls wEM1 womenboard boardsize own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
 
 . xtgls wEM1 womenboard indepboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
 
 . xtgls wEM1 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
 
 . xtgls wEM1 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
 
 . xtgls wEM1 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM1") tstat
 
 
 ********Dependent Variable wEM2********
 
 . xtgls wEM2 womenboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard boardsize own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard indepboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 
 
@@ -458,66 +458,66 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable absEM3********
 
 . xtgls absEM3 womenboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
 
 . xtgls absEM3 womenboard boardsize own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
 
 . xtgls absEM3 womenboard indepboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
 
 . xtgls absEM3 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
 
 . xtgls absEM3 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
 
 . xtgls absEM3 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM3") tstat
 
 
 
 ********Dependent Variable absEM4********
 
 . xtgls absEM4 womenboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard boardsize own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard indepboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 
 
 ********Dependent Variable absEM5********
 
 . xtgls absEM5 womenboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard boardsize own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard indepboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 
 
@@ -528,43 +528,43 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable wEM1********
 
 . xtabond wEM1 womenboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", replace label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTABOND.xls>", replace label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
 
 . xtabond wEM1 womenboard boardsize own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
 
 . xtabond wEM1 womenboard indepboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
 
 . xtabond wEM1 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
 
 . xtabond wEM1 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
 
 . xtabond wEM1 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM1") tstat
 
 
 ********Dependent Variable wEM2********
 
 . xtabond wEM2 womenboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard boardsize own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard indepboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM2") tstat
 
 
 
@@ -572,66 +572,66 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable absEM3********
 
 . xtabond absEM3 womenboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
 
 . xtabond absEM3 womenboard boardsize own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
 
 . xtabond absEM3 womenboard indepboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
 
 . xtabond absEM3 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
 
 . xtabond absEM3 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
 
 . xtabond absEM3 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM3") tstat
 
 
 
 ********Dependent Variable absEM4********
 
 . xtabond absEM4 womenboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard boardsize own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard indepboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM4") tstat
 
 
 
 ********Dependent Variable absEM5********
 
 . xtabond absEM5 womenboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard boardsize own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard indepboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard indepboard nonexecboard own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard indepboard nonexecboard auditcomm own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard indepboard nonexecboard auditcomm boardmeetings1 own1 wsize wtobinq tdta wz roa, lags(1) twostep noconstant endogenous(own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2), Instruments, e(zrank)) dec(4) ctitle("EM5") tstat
 
 
 
@@ -643,13 +643,13 @@ use "DB Gener EUR.dta", clear
 ********Dependent Variable wEM1********
 
 xtabond2 wEM2 womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex i.y ,r twostep gmm(womenboard boardsize indepboard ownconcen wsize, lag(2 6))
-outreg2 using "1.2 Basic GMM.doc", replace label keep(womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex) addtext(Year FE, YES) addstat(F-Test, e(F), Auto(1), e(ar1p) , Auto(2), e(ar2p) , Hansen p-value, e(hansenp)) title("Table 2. Women on Board and Earnings Management: Generalized Method of Moments") ctitle("EM2") dec(3) nocons 
+outreg2 using "<1.2 Basic GMM.doc>", replace label keep(womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex) addtext(Year FE, YES) addstat(F-Test, e(F), Auto(1), e(ar1p) , Auto(2), e(ar2p) , Hansen p-value, e(hansenp)) title("Table 2. Women on Board and Earnings Management: Generalized Method of Moments") ctitle("EM2") dec(3) nocons 
 
 xtabond2 wEM5 womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex i.y ,r twostep gmm(womenboard boardsize indepboard ownconcen wsize, lag(2 6))
-outreg2 using "1.2 Basic GMM.doc", append label keep(womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex) addtext(Year FE, YES) addstat(F-Test, e(F), Auto(1), e(ar1p) , Auto(2), e(ar2p) , Hansen p-value, e(hansenp)) title("Table 2. Women on Board and Earnings Management: Generalized Method of Moments") ctitle("EM1") dec(3)  nocons 
+outreg2 using "<1.2 Basic GMM.doc>", append label keep(womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex) addtext(Year FE, YES) addstat(F-Test, e(F), Auto(1), e(ar1p) , Auto(2), e(ar2p) , Hansen p-value, e(hansenp)) title("Table 2. Women on Board and Earnings Management: Generalized Method of Moments") ctitle("EM1") dec(3)  nocons 
 
 xtabond2 wEM5 womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex i.y ,r twostep gmm(womenboard boardsize indepboard ownconcen wsize, lag(2 6))
-outreg2 using "1.2 Basic GMM.doc", append label keep(womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex) addtext(Year FE, YES) addstat(F-Test, e(F), Auto(1), e(ar1p) , Auto(2), e(ar2p) , Hansen p-value, e(hansenp)) title("Table 2. Women on Board and Earnings Management: Generalized Method of Moments") ctitle("EM1") dec(3)  nocons 
+outreg2 using "<1.2 Basic GMM.doc>", append label keep(womenboard boardsize indepboard ownconcen wsize wtobinq tdta wz roa econindex) addtext(Year FE, YES) addstat(F-Test, e(F), Auto(1), e(ar1p) , Auto(2), e(ar2p) , Hansen p-value, e(hansenp)) title("Table 2. Women on Board and Earnings Management: Generalized Method of Moments") ctitle("EM1") dec(3)  nocons 
 
 
 **CREO QUE**
@@ -686,126 +686,126 @@ correlate econindex va ps ge rq rl cc econfree ggg
 
 
 . xtreg wEM2 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, fe
-. outreg2 using "XTREG.xls", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 . xtreg wEM2 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM2") tstat
 
 
 ** Más lo que me costó definir un modelo para EM2 y no me sale ahora EM4 y EM5***
 . xtreg absEM4 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 . xtreg absEM4 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM4") tstat
 
 
 
 
 . xtreg absEM5 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 . xtreg absEM5 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, fe
-. outreg2 using "XTREG.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTREG.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Sigma u, e(sigma_u), Sigma e, e(sigma_e), Rho, e(rho), F-test, e(F_f), R-sqr, e(r2_o)) dec(4) ctitle("EM5") tstat
 
 
 
 ********* XTGLS *********
 
 . xtgls wEM2 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTGLS.xls>", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtgls wEM2 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 
 
 . xtgls absEM4 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtgls absEM4 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 
 
 
 . xtgls absEM5 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtgls absEM5 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, p(h) c(ar1) force
-. outreg2 using "XTGLS.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTGLS.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 
 
@@ -814,63 +814,63 @@ correlate econindex va ps ge rq rl cc econfree ggg
 ********* XTPCSE *********
 
 . xtpcse wEM2 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTPCSE.xls>", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtpcse wEM2 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtpcse wEM2 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtpcse wEM2 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtpcse wEM2 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtpcse wEM2 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 
 
 . xtpcse absEM4 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtpcse absEM4 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtpcse absEM4 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtpcse absEM4 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtpcse absEM4 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtpcse absEM4 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 
 
 
 . xtpcse absEM5 womenboard boardsize own1 wsize tobinq tdta wz roa i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtpcse absEM5 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtpcse absEM5 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtpcse absEM5 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtpcse absEM5 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtpcse absEM5 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex i.c, het c(psar1)
-. outreg2 using "XTPCSE.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTPCSE.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(R-squared, e(r2), Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 
 
@@ -880,63 +880,63 @@ correlate econindex va ps ge rq rl cc econfree ggg
 ********* XTABOND *********
 
 . xtabond wEM2 womenboard boardsize own1 wsize tobinq tdta wz roa _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", replace label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard indepboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(boardsize indepboard nonexecboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard boardmeetings own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 . xtabond wEM2 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard boardmeetings own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM2") tstat
 
 
 
 . xtabond absEM4 womenboard boardsize own1 wsize tobinq tdta wz roa _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard indepboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(boardsize indepboard nonexecboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard boardmeetings own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 . xtabond absEM4 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard boardmeetings own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM4") tstat
 
 
 
 
 . xtabond absEM5 womenboard boardsize own1 wsize tobinq tdta wz roa _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard  boardsize indepboard own1 wsize tobinq tdta wz roa _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard indepboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard own1 wsize tobinq tdta wz roa) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(boardsize indepboard nonexecboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize tobinq tdta wz roa econindex ) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard boardmeetings own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 . xtabond absEM5 womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex _Ic_2 - _Ic_10, r lags(1)  noconstant endogenous(womenboard boardsize indepboard nonexecboard boardmeetings own1 roa, lag(0,2))
-. outreg2 using "XTABOND.xls", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
+. outreg2 using "<XTABOND.xls>", append label keep(womenboard boardsize indepboard nonexecboard boardmeetings ge own1 wsize wmtb tdta wz roa econindex) addtext(Year FE, YES, Country FE, YES) addstat(Wald-test, e(chi2)) dec(4) ctitle("EM5") tstat
 
 
 
